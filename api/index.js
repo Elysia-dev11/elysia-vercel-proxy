@@ -8,7 +8,7 @@ export default async function handler(request) {
   // Environment Variables from Vercel Dashboard
   const HF_SPACE_URL = process.env.HF_SPACE_URL; // https://mark421-zeroclaw.hf.space
   const SECRET_PATH = process.env.SECRET_PATH; // /wh-rahasia-zeroclaw-2026
-  const SECRET_TOKEN = process.env.SECRET_TOKEN; // TokenRahasiaAnda123!
+  const SECRET_TOKEN = process.env.SECRET_TOKEN; // TokenRahasiaAnda123
 
   // Strip /api prefix because this file is mounted at /api/*
   const pathname = url.pathname.replace(/^\/api/, '') || '/';
